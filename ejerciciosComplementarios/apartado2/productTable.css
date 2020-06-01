@@ -1,0 +1,21 @@
+table.tabla1 {
+    font-family: "Trebuchet MS", sans-serif;
+    border: #333;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table tbody.content th {
+    background-color: #D3D3D3;
+}
+
+table tbody.content tr:nth-child(odd) {
+    background-color: #FFFFCC;
+}
+
+table tbody.content tr.rowHover:hover {
+    background-color: #D3D3D3;
+}

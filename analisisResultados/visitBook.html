@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC>
+<html>
+
+<head>
+    <title>Formulario de datos personales</title>
+    <link rel="stylesheet" href="visitBook.css" type="text/css">
+</head>
+
+<body class="contactBody">
+    <h1>Libro de visitas</h1>
+    <hr size="5">
+    <b> Datos personales:</b>
+    <form name="miformulario" method="POST" action="mailto:arielsolano39@gmail.com" enctype="text/plain">
+
+        <tr>
+            <br>
+            <td> Nombre:<input type="text" maxlength="20" size="15" name="nombre"></td>
+            <br>
+        </tr>
+        <tr>
+            <br>
+            <td>
+                Apellidos: <input type="text" maxlength="20" size="15" name="apellidos"><br><br>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><b>Indica un pseudónimo y una contraseña: </b><br></td>
+        </tr>
+
+        <tr>
+            <td>
+                <br> Pseudónimo:
+                <input type="text" maxlength="16" size="15" name="pseudonimo"> Contraseña:
+                <input type="password" maxlength="12" size="15" name="password">
+            </td>
+
+        </tr>
+
+
+
+        <tr> <br><br> Otros datos: <br></tr>
+
+        <table>
+            <tr>
+
+                <td>
+                    <table>
+                        <tr>
+                            <th>Edad:</th>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" name="edad" value="0-10" style="text-align: justify;">0-10</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="edad" value="11-20">11-20</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="edad" value="21-30">21-30</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="edad" value="31-40">31-40</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="edad" value="41-mas">41 o más</td>
+                        </tr>
+
+                    </table>
+                </td>
+
+                <td>
+                    <table>
+                        <tr>
+                            <th>¿D&oacute;nde vives?</th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="locacion" value="santiago" style="text-align: justify;">Santiago</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="locacion" value="santodomingo">Santo Domingo</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="locacion" value="romana">La Romana</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="locacion" value="sancristobal">San Cristobal</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="locacion" value="otros">Otros: <input type="text" name="locacion"></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td>
+                    <table>
+                        <tr>
+                            <th>Aficiones</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="aficiones" value="music">Música</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="aficiones" value="sports">Deportes</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="aficiones" value="painting">Pintura</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="aficiones" value="reading">Lectura</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="aficiones" value="otras">Otras:<input type="text" name="aficiones"></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br><br>
+                    <input type="submit" name="botoenviar" value="Enviar"> &nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="botoncancelar" value="Restablecer">
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>
