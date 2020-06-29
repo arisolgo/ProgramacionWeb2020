@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <script>
+        var l1, l2, l3, tr, menor;
+        var cEsca = 0;
+        var cEqui = 0;
+        var cIso = 0;
+
+
+        for (var i = 0; i < 4; i++) {
+
+            l1 = prompt(`Ingrese el lado #1 (triángulo # ${i+1}) :`);
+            l2 = prompt(`Ingrese el lado #2 (triángulo # ${i+1}) :`);
+            l3 = prompt(`Ingrese el lado #3 (triángulo # ${i+1}) :`);
+
+            tr = "equilátero";
+            cEqui += 1;
+            if (l1 !== l2 || l1 !== l3) {
+                cEqui -= 1;
+                cIso += 1;
+                tr = "isóceles ";
+                if (l1 !== l2 && l1 !== l3 && l2 !== l3) {
+                    cIso -= 1;
+                    cEsca += 1;
+
+                    tr = "escaleno";
+                }
+            }
+            document.write(`Triángulo #${i+1} es: ${tr} <br/>`);
+
+
+
+        }
+
+        document.write(`Triángulos equiláteros: ${cEqui} <br/>`);
+        document.write(`Triángulos isóceles: ${cIso} <br/>`);
+        document.write(`Triángulos escalenos: ${cEsca} <br/>`);
+
+        menor = "Equilátero";
+        if (cIso < cEqui) {
+            menor = "Isóceles";
+        }
+        if (cEsca < cIso) {
+            menor = "Escaleno";
+        }
+
+        document.write(`La menor cantidad de triángulos son de tipo: ${menor} <br/>`);
+    </script>
+
+</body>
+
+</html>
