@@ -1,0 +1,25 @@
+h1 {
+    font-family: "Comic Sans MS", sans-serif;
+    text-transform: uppercase;
+}
+
+.dLeft {
+    font-family: "Comic Sans MS", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 410px;
+    height: 400px;
+}
+
+.dRight {
+    font-family: "Comic Sans MS", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 250px;
+    height: 500px;
+}
+
+footer {
+    font-family: "Comic Sans MS", sans-serif;
+    text-transform: uppercase;
+}
